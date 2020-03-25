@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+// Color system
+$orange: #CC6329;
+$light-orange: #E3BBA6;
+$black:    #000;
+$white:    #fff;
+$gray: #707070;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "orange":       $orange,
+    "light-orange":  $light-orange,
+    "dark":       $black,
+    "white":      $white,
+    "gray":       $gray,
+  ),
+  $colors
+);
+
+$primary:       $orange;
+$secondary:     $light-orange;
+$light:         $gray;
+$white:         $white;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "light":      $light,
+    "white" :     $white
+  ),
+  $theme-colors
+);
+
+$enable-shadows:            true;
+
+$box-shadow-sm:             4px 4px 10px rgba(#000000, 0.15);
+$box-shadow:                4px 4px 10px rgba(#000000, 0.3);
+
+$border-radius-sm:          15px;
+$border-radius:             25px;
+$border-radius-lg:          50px;
+
+$font-family-sans-serif:    "Raleway", sans-serif;
+$font-family-base:          $font-family-sans-serif;
+$font-weight-lighter:       300;
+$font-weight-light:         300;
+$font-weight-normal:        400;
+$font-weight-bold:          500;
+$font-weight-bolder:        500;
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
