@@ -38,11 +38,11 @@ $theme-colors: map-merge(
 
 $enable-shadows:            true;
 
-$box-shadow-sm:             4px 4px 10px rgba(#000000, 0.15);
+$box-shadow-sm:             2px 2px 4px rgba(#000000, 0.1);
 $box-shadow:                4px 4px 10px rgba(#000000, 0.3);
 
-$border-radius-sm:          15px;
-$border-radius:             25px;
+$border-radius-sm:          13px;
+$border-radius:             18px;
 $border-radius-lg:          50px;
 
 $font-family-sans-serif:    "Raleway", sans-serif;
@@ -53,5 +53,5 @@ $font-weight-normal:        400;
 $font-weight-bold:          500;
 $font-weight-bolder:        500;
 
-@import '~bootstrap/scss/bootstrap.scss';
-@import '~bootstrap-vue/src/index.scss';
+// @import '~bootstrap/scss/bootstrap.scss';
+// @import '~bootstrap-vue/src/index.scss';

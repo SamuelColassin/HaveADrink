@@ -1,4 +1,12 @@
 html, body, #app {
     height: 100%;
-    width: -webkit-fill-available;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: $font-family-base;
+    color: $gray;
   }
+
+  *:focus {
+    outline: none;
+}

@@ -4,8 +4,10 @@ import "./registerServiceWorker";
 import store from "./store";
 import "./scss/variables.scss";
 import "./scss/global.scss";
+import Axios from "axios";
 
 Vue.config.productionTip = false;
+Vue.prototype.$http = Axios;
 
 new Vue({
   store,
